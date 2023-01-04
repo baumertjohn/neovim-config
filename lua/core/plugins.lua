@@ -26,6 +26,9 @@ return require('packer').startup(function(use)
     requires = { {'nvim-lua/plenary.nvim'} }
   }
   use {'neoclide/coc.nvim', branch = 'release'}
+  -- Tabs for open files
+  -- use 'nvim-tree/nvim-web-devicons'
+  use {'romgrk/barbar.nvim', wants = 'nvim-web-devicons'}
 
 
   -- Automatically set up your configuration after cloning packer.nvim
